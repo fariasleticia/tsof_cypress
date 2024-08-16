@@ -25,7 +25,7 @@ export default function Inicio() {
           <div className={estilos.vantagens}>
             <h2 data-test="titulo-vantagens">Vantagens do nosso banco:</h2>
             <div className={estilos.vantagens__itens}>
-              <div className={estilos.vantagens__item}>
+              <div className={estilos.vantagens__item} data-test="item1">
                 <img src={presente} data-test="imagem" alt="ícone de um presente" />
                 <h3 data-test="subtitulo1">Conta e cartão gratuitos</h3>
                 <p data-test="vantagem1">
@@ -33,7 +33,7 @@ export default function Inicio() {
                   isso: sem tarifa de manutenção.
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
+              <div className={estilos.vantagens__item} data-test="item2">
                 <img src={saque} data-test="imagem" alt="ícone de uma mão segurando um dinheiro" />
                 <h3 data-test="subtitulo2">Saques sem custo</h3>
                 <p data-test="vantagem2">
@@ -41,7 +41,7 @@ export default function Inicio() {
                   24h.
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
+              <div className={estilos.vantagens__item} data-test="item3">
                 <img src={estrela} data-test="imagem" alt="ícone de uma estrela" />
                 <h3 data-test="subtitulo3">Programa de pontos</h3>
                 <p data-test="vantagem3">
@@ -49,7 +49,7 @@ export default function Inicio() {
                   pagar mensalidade!
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
+              <div className={estilos.vantagens__item} data-test="item4">
                 <img
                   data-test="imagem"
                   src={dispositivo}

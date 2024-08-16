@@ -36,8 +36,12 @@ describe('Página Principal', () => {
   it('Deve renderizar o parágrafo com o texto correto!', () => {
     cy.getByData('vantagem4').contains('Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
   })
-  
-  it('Deve renderizar todas as imagens', () => {
+
+  it('Deve renderizar todas as imagens.', () => {
     cy.getByData('imagem').should("be.visible")
+  })
+
+  it('Deve renderizar o texto corretamente.', () => {
+    cy.identifyText('item4').find('h3').should('contain','Seguro Dispositivos')
   })
 })
