@@ -22,7 +22,7 @@ export default function Inicio() {
             />
           </div>
           <div className={estilos.vantagens}>
-            <h2>Vantagens do nosso banco:</h2>
+            <h2 data-test="titulo-vantagens">Vantagens do nosso banco:</h2>
             <div className={estilos.vantagens__itens}>
               <div className={estilos.vantagens__item}>
                 <img src={presente} alt="ícone de um presente" />
@@ -43,7 +43,7 @@ export default function Inicio() {
               <div className={estilos.vantagens__item}>
                 <img src={estrela} alt="ícone de uma estrela" />
                 <h3>Programa de pontos</h3>
-                <p>
+                <p data-test="vantagem3">
                   Você pode acumular pontos com suas compras no crédito sem
                   pagar mensalidade!
                 </p>
