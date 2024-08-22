@@ -7,7 +7,7 @@ describe('Formulário cadastro', () => {
     it('Usuário deve conseguir se cadastrar com sucesso', () => {
         cy.getByData('botao-cadastro').click()
         cy.getByData('nome-input').type('José da Silva')
-        cy.getByData('email-input').type('ze@email.com')
+        cy.getByData('email-input').type('ze90@email.com')
         cy.getByData('senha-input').type('456789')
         cy.getByData('botao-enviar').click()
         cy.getByData('mensagem-sucesso').should('exist').and('have.text', 'Usuário cadastrado com sucesso!')
@@ -26,7 +26,7 @@ describe('Formulário cadastro', () => {
     // teste para verificar se o campo 'email' está preenchido
     it('Não deve permitir o campo email em branco', () => {
         cy.getByData('botao-cadastro').click()
-        // cy.getByData('nome-input').type('José da Silvaa')
+        // cy.getByData('nome-input').type('José da Silva')
         // cy.getByData('email-input').type('')
         cy.getByData('senha-input').type('4567898')
         cy.getByData('botao-enviar').click()
@@ -46,7 +46,7 @@ describe('Formulário cadastro', () => {
     // teste para verificar se o campo 'senha' está preenchido
     it('Não deve permitir o campo senha em branco', () => {
         cy.getByData('botao-cadastro').click()
-        cy.getByData('nome-input').type('José da Silva')
+        // cy.getByData('nome-input').type('José da Silva')
         cy.getByData('email-input').type('neiltona@alura.com')
         // cy.getByData('senha-input').type('')
         cy.getByData('botao-enviar').click()
