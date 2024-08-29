@@ -1,4 +1,4 @@
-describe('Testando múltiplas páginas', () => {
+describe('Testando múltiplas páginas', {browser: 'edge'}, () => {
     beforeEach('Deve acessar a página e realizar login', () => {
         cy.visit('/')
         cy.getByData('botao-login').click()
