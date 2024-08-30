@@ -3,7 +3,7 @@ describe('Formulário login', () => {
         cy.visit('http://localhost:3000')
     })
 
-    it('Não deve permitir um e-mail inválido!', () => {
+    it('Não deve permitir e-mail inválido!', () => {
         cy.getByData('botao-login').click()
         cy.getByData('email-input').type('neilton@alura')
         cy.getByData('senha-input').type('123456')
